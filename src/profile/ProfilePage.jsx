@@ -243,7 +243,7 @@ class ProfilePage extends React.Component {
               {this.renderViewMyRecordsButton()}
             </div>
             <Name
-              name={name}
+              name={name+" oh ya"}
               visibilityName={visibilityName}
               formId="name"
               {...commonFormProps}
