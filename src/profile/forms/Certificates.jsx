@@ -118,7 +118,7 @@ class Certificates extends React.Component {
       return (
         <FormattedMessage
           id="profile.no.certificates"
-          defaultMessage="You don't have any certificates yet."
+          defaultMessage="You don't have any certificates yet buddy."
           description="displays when user has no course completion certificates"
         />
       );
