@@ -37,6 +37,9 @@ import Banner from './Banner';
 // Selectors
 import { profilePageSelector } from './data/selectors';
 
+import IssueModal from '../components/IssueModal';
+
+
 // i18n
 import messages from './ProfilePage.messages';
 
@@ -228,6 +231,7 @@ class ProfilePage extends React.Component {
               {this.renderViewMyRecordsButton()}
             </div>
           </div>
+          <IssueModal user={this.context.authenticatedUser} />
         </div>
         {this.renderPhotoUploadErrorMessage()}
         <div className="row">
