@@ -40,6 +40,8 @@ import { profilePageSelector } from './data/selectors';
 // i18n
 import messages from './ProfilePage.messages';
 
+import IssueModal from '../components/IssueModal';
+
 ensureConfig(['CREDENTIALS_BASE_URL', 'LMS_BASE_URL'], 'ProfilePage');
 
 class ProfilePage extends React.Component {
@@ -229,6 +231,7 @@ class ProfilePage extends React.Component {
               {this.renderViewMyRecordsButton()}
             </div>
           </div>
+          <IssueModal user={this.context.authenticatedUser} />
         </div>
         {this.renderPhotoUploadErrorMessage()}
         <div className="row">
