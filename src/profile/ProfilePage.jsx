@@ -231,7 +231,7 @@ class ProfilePage extends React.Component {
               {this.renderViewMyRecordsButton()}
             </div>
           </div>
-          <IssueModal user={this.context.authenticatedUser} />
+          <IssueModal className="this-is-a-test" user={this.context.authenticatedUser} />
         </div>
         {this.renderPhotoUploadErrorMessage()}
         <div className="row">
